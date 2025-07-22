@@ -1,0 +1,36 @@
+{
+  "appSettings": {
+    "defaultLanguage": "English",
+    "supportedLanguages": ["English", "Spanish", "French", "German", "Chinese"],
+    "checkForUpdatesOnStartup": true,
+    "analyticsEnabled": true,
+    "voiceCommandsEnabled": true
+  },
+  "arSettings": {
+    "imageTrackingMode": "Quality",
+    "maxTrackedImages": 3,
+    "minConfidenceThreshold": 0.75,
+    "useCloudAnchors": false
+  },
+  "uiSettings": {
+    "instructionPanelOpacity": 0.8,
+    "highlightColor": "#00A0FF",
+    "errorColor": "#FF0000",
+    "successColor": "#00FF00",
+    "fontSizeMultiplier": 1.0
+  },
+  "devices": [
+    {
+      "deviceId": "smart_thermostat_v1",
+      "prefabPath": "Prefabs/Devices/SmartThermostat",
+      "referenceImagePath": "ReferenceImages/SmartThermostat",
+      "dataPath": "DeviceData/SmartThermostat"
+    },
+    {
+      "deviceId": "smart_light_v1",
+      "prefabPath": "Prefabs/Devices/SmartLight",
+      "referenceImagePath": "ReferenceImages/SmartLight",
+      "dataPath": "DeviceData/SmartLight"
+    }
+  ]
+}

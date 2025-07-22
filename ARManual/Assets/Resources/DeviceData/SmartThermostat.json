@@ -1,0 +1,65 @@
+{
+  "deviceId": "smart_thermostat_v1",
+  "deviceName": "Smart Thermostat",
+  "manufacturer": "SmartHome Inc.",
+  "modelNumber": "TH-100",
+  "steps": [
+    {
+      "stepId": "power_connection",
+      "title": "Connect Power",
+      "description": "Connect the power adapter to the back of the thermostat and plug it into a wall outlet.",
+      "voiceOverFile": "thermostat_step1_power.mp3",
+      "autoAdvanceDelay": 0
+    },
+    {
+      "stepId": "wifi_setup",
+      "title": "Connect to WiFi",
+      "description": "Press and hold the WiFi button for 3 seconds until the blue light starts flashing. Open your smartphone's WiFi settings and connect to 'Thermostat-Setup'.",
+      "voiceOverFile": "thermostat_step2_wifi.mp3",
+      "autoAdvanceDelay": 0
+    },
+    {
+      "stepId": "app_connection",
+      "title": "Connect to App",
+      "description": "Open the SmartHome app and scan the QR code on the back of the thermostat to complete setup.",
+      "voiceOverFile": "thermostat_step3_app.mp3",
+      "autoAdvanceDelay": 0
+    }
+  ],
+  "translations": {
+    "es": {
+      "deviceName": "Termostato Inteligente",
+      "steps": [
+        {
+          "title": "Conectar Energía",
+          "description": "Conecte el adaptador de corriente a la parte posterior del termostato y enchúfelo a una toma de corriente."
+        },
+        {
+          "title": "Conectar a WiFi",
+          "description": "Mantenga presionado el botón WiFi durante 3 segundos hasta que la luz azul comience a parpadear. Abra la configuración de WiFi de su teléfono y conéctese a 'Thermostat-Setup'."
+        },
+        {
+          "title": "Conectar a la Aplicación",
+          "description": "Abra la aplicación SmartHome y escanee el código QR en la parte posterior del termostato para completar la configuración."
+        }
+      ]
+    },
+    "fr": {
+      "deviceName": "Thermostat Intelligent",
+      "steps": [
+        {
+          "title": "Connecter l'alimentation",
+          "description": "Connectez l'adaptateur d'alimentation à l'arrière du thermostat et branchez-le dans une prise murale."
+        },
+        {
+          "title": "Connecter au WiFi",
+          "description": "Appuyez et maintenez le bouton WiFi pendant 3 secondes jusqu'à ce que le voyant bleu commence à clignoter. Ouvrez les paramètres WiFi de votre smartphone et connectez-vous à 'Thermostat-Setup'."
+        },
+        {
+          "title": "Connecter à l'application",
+          "description": "Ouvrez l'application SmartHome et scannez le code QR à l'arrière du thermostat pour terminer la configuration."
+        }
+      ]
+    }
+  }
+}

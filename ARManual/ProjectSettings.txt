@@ -1,0 +1,68 @@
+AR Manual Project Configuration Guide
+
+1. Unity Version: 2022.3 LTS or newer
+
+2. Required Packages:
+   - AR Foundation (com.unity.xr.arfoundation)
+   - ARCore XR Plugin (com.unity.xr.arcore)
+   - ARKit XR Plugin (com.unity.xr.arkit)
+   - TextMeshPro (com.unity.textmeshpro)
+   - Universal Render Pipeline (com.unity.render-pipelines.universal)
+
+3. Build Settings:
+   - Platform: Android and iOS
+   - Minimum Android API Level: 24 (Android 7.0)
+   - Minimum iOS Version: 13.0
+   - Scripting Backend: IL2CPP
+   - Target Architectures: ARM64
+
+4. Player Settings:
+   - Company Name: YourCompanyName
+   - Product Name: AR Manual
+   - Version: 1.0.0
+   - Bundle Identifier: com.yourcompany.armanual
+   
+   Android:
+   - Graphics APIs: OpenGLES3, Vulkan
+   - Required permissions:
+     - Camera
+     - Microphone
+     - Internet
+   
+   iOS:
+   - Camera Usage Description: "Camera access is required for AR functionality"
+   - Microphone Usage Description: "Microphone access is required for voice commands"
+   - Requires ARKit support: Yes
+
+5. XR Plugin Management:
+   - Enable ARCore on Android
+   - Enable ARKit on iOS
+   - AR Required: Yes
+
+6. Project Structure:
+   - Assets/
+     - Scripts/
+       - Core/
+       - AR/
+       - UI/
+       - Cloud/
+     - Prefabs/
+     - Resources/
+     - Scenes/
+     - Materials/
+     - Models/
+     - Textures/
+     - Animations/
+     - Audio/
+     - Plugins/
+
+7. Main Scene Setup:
+   - AR Session
+   - AR Session Origin
+   - AR Camera
+   - UI Canvas (with instruction panels)
+   - Managers (App Controller, Device Recognition, etc.)
+
+8. Build Process:
+   - Android: Generate signed APK or AAB
+   - iOS: Build Xcode project, then build from Xcode
